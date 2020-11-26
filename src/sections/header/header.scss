@@ -1,0 +1,249 @@
+
+.header-main {
+	box-sizing: border-box;
+	padding-top: 55px;
+	padding-bottom: 250px;
+	background-color: #f6f6f6;
+	@media screen and (max-width: 320px) {
+			padding-bottom: 50px;
+		}
+}
+.header {
+
+		&__title {
+		margin: 0 auto;
+		color: #10cab7;
+		font-family: "Work Sans";
+		font-size: 55px;
+		font-weight: 800;
+		line-height: 66.9px;
+		letter-spacing: -2.77px;
+		text-align: center;
+		@media screen and (max-width: 460px) {
+				font-size: 50px;
+			}
+		}
+
+		&__main-text {
+		text-align: center;
+		}
+
+		&__main-text1 {
+		margin: 0 auto;
+		margin-top: 65px;
+		color: #2c4755;
+		font-family: "Work Sans";
+		font-size: 20px;
+		font-weight: 400;
+		line-height: 32px;
+		letter-spacing: -1px;
+		@media screen and (max-width: 560px) {
+				font-size: 16px;
+			}
+		}
+
+		&__main-text2 {
+		margin: 0 auto;
+		color: #2c4755;
+		font-family: "Work Sans";
+		font-size: 20px;
+		font-weight: 400;
+		line-height: 32px;
+		letter-spacing: -1px;
+		@media screen and (max-width: 560px) {
+				font-size: 16px;
+			}
+		}
+}
+
+.header-top {
+	display: flex;
+	justify-content: space-between;
+   max-width: 1060px;
+	height: 90px;
+	margin-left: 390px;
+	margin-right: 470px;
+		@media screen and (max-width: 1300px) {
+			margin-left: 200px;
+			margin-right: 200px;
+		}
+		@media screen and (max-width: 900px) {
+			margin-left: 100px;
+			margin-right: 100px;
+		}
+		@media screen and (max-width: 500px) {
+			margin-left: 20px;
+			margin-right: 20px;
+		}
+
+		&__logo {
+		margin-top: 37px;
+		width: 45px;
+		height: 30px;
+		}
+
+		&__nav {
+		margin-top: 42px;
+		width: 27px;
+		height: 18px;
+		}
+
+		&__label {
+		position: relative;
+		display: block;
+		cursor: pointer;
+		}
+
+		&__nav-img {
+		background: url(../img/burger.jpg) no-repeat;
+		height: 18px;
+		width: 28px;
+		}
+
+		&__mobile-nav {
+		position: relative;
+		margin-top: -60px;
+		margin-left: -500px;
+		background: #2c4755;
+		height: 1065px;
+		width: 545px;
+		max-height: 0;
+		font-size: 0;
+		overflow: hidden;
+		transition: 1s all;
+		@media screen and (max-width: 768px) {
+			max-width: 300px;
+			height: 730px;
+			margin-left: -280px;
+		}
+		@media screen and (max-width: 350px) {
+			max-width: 280px;
+			height: 730px;
+			margin-left: -220px;
+		}
+		}
+
+		&__menu {
+		position: absolute;
+		margin-top: 60px;
+		margin-left: 65px;
+		}
+
+		&__menu-text {
+		color: #516877;
+		font-family: "Work Sans";
+		font-size: 21px;
+		font-weight: 400;
+		}
+
+		&__menu-items {
+		margin-top: 10px;
+		margin-left: 65px;
+		color: #fff;
+		list-style-type: none;
+		font-family: "Work Sans";
+		font-size: 29px;
+		font-weight: 400;
+		letter-spacing: -1px;
+		margin-left: -38px;
+		line-height: 32px;
+		}
+
+		&__get-in-touch {
+		position: absolute;
+		margin-top: 290px;
+		margin-left: 65px;
+		}
+
+		&__get-in-touch-text {
+		color: #516877;
+		font-family: "Work Sans";
+		font-size: 21px;
+		font-weight: 400;
+		}
+
+		&__get-in-touch-items {
+		color: #fff;
+		list-style-type: none;
+		font-family: "Work Sans";
+		font-size: 21px;
+		font-weight: 400;
+		margin-left: -38px;
+		}
+
+		&__get-social {
+		position: absolute;
+		margin-top: 395px;
+		margin-left: 65px;
+		}
+
+		&__get-social-text {
+		color: #516877;
+		font-family: "Work Sans";
+		font-size: 21px;
+		font-weight: 400;
+		}
+
+		&__get-social-items {
+		color: #fff;
+		list-style-type: none;
+		font-family: "Work Sans";
+		font-size: 21px;
+		font-weight: 400;
+		margin-left: -38px;
+		line-height: 30px;
+		}
+
+		&__coryright {
+		position: absolute;
+		margin-top: 990px;
+		margin-left: 60px;
+		font-family: "Work Sans";
+      font-size: 15px;
+      font-weight: 400;
+		color: #516877;
+		@media screen and (max-width: 768px) {
+			margin-top: 650px;
+		}
+		}
+}
+
+.no-decor-href {
+	color: #fff;
+	text-decoration: none;
+
+		&:hover {
+		color: #10cab7;
+		}
+}
+
+#header-top__mobile-menu {
+   display: none;
+}
+
+#header-top__mobile-menu:checked ~ .header-top__mobile-nav {
+	display: flex;
+	justify-content: start;
+	margin-top: -50px;
+	max-height: 1065px;
+	font-size: 21px;
+}
+
+#header-top__mobile-menu:checked ~ .header-top__label {
+	right: 430px;
+	top: 10px;
+	z-index: 2;
+		@media screen and (max-width: 768px) {
+			right: 220px;
+		}
+		@media screen and (max-width: 350px) {
+			right: 160px;
+		}
+
+}
+
+#header-top__mobile-menu:checked ~ .header-top__label > .header-top__nav-img {
+	background: url(../img/Close.png) no-repeat;
+	height: 20px;
+	width: 20px;
+}

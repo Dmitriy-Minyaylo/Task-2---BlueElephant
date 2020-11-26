@@ -1,0 +1,166 @@
+
+.contact {
+	background-color: #dadada;
+	padding-top: 85px;
+	padding-bottom: 165px;
+	@media screen and (max-width: 480px) {
+				padding-top: 50px;
+				padding-bottom: 50px;
+			}
+
+		&__title {
+		display: flex;
+		justify-content: center;	
+		}
+		
+		&__main-title {
+		color: #ebeced;
+		font-size: 162px;
+		font-family: "Work Sans";
+		font-weight: 800;
+		text-align: center;
+		padding: 0;
+		margin: 0 auto;
+		@media screen and (max-width: 640px) {
+			font-size: 122px;
+		}
+		@media screen and (max-width: 480px) {
+			font-size: 72px;
+		}
+
+		&::after {
+			content: "We are born to create";
+			display: block;
+			color: #575757;
+			font-family: "Work Sans";
+			font-size: 25px;
+			font-weight: 400;
+			margin: 0 auto;
+			margin-top: -60px;
+			line-height: 35px;
+			@media screen and (max-width: 768px) {
+			margin-top: -50px;
+			font-size: 20px;
+		}
+			@media screen and (max-width: 480px) {
+			margin-top: -40px;
+			font-size: 18px;
+		}
+			}
+		}
+
+		&__desc {
+		margin-top: 150px;
+		margin-left: 20%;
+		color: #2c4755;
+		font-family: "Work Sans";
+		font-size: 55px;
+		font-weight: 800;
+		line-height: 66.9px;
+		letter-spacing: -2.77px;
+			@media screen and (max-width: 768px) {	
+			margin-top: 100px;
+			margin-left: 8%;
+			font-size: 46px;
+		}
+			@media screen and (max-width: 480px) {
+			margin-top: 70px;
+			margin-left: 5%;
+			font-size: 40px;
+		}
+		}
+
+		&__mail {
+		margin-top: 35px;
+		margin-left: 22%;
+		width: 510px;
+		height: 48px;
+		color: #10cab7;
+		font-family: "Work Sans";
+		font-size: 50px;
+		font-weight: 800;
+		line-height: 66.9px;
+		text-align: left;
+		letter-spacing: -2.5px;
+			@media screen and (max-width: 768px) {
+			margin-left: 12%;
+			font-size: 36px;
+		}
+		@media screen and (max-width: 480px) {
+			margin-left: 7%;
+			font-size: 28px;
+		}
+		}
+
+		&__mail::after {
+		content: "";
+		display: block;
+		margin-top: -30px;
+		margin-left: -25px;
+		width: 557px;
+		height: 34px;
+		background-color: #ffffff;
+		@media screen and (max-width: 768px) {
+			margin-top: -35px;
+			margin-left: -15px;
+			height: 27px;
+			width: 400px;
+		}
+		@media screen and (max-width: 480px) {
+			margin-top: -30px;
+			margin-left: -10px;
+			height: 24px;
+			width: 280px;
+		}
+		}
+
+		&__social-link {
+		display: flex;
+		margin-top: 45px;
+		margin-left: 25%;
+			@media screen and (max-width: 768px) {
+			margin-top: 30px;
+			margin-left: 10%;
+			flex-flow: column;
+		}
+		}
+
+		&__social-link-desc {
+		height: 11px;
+		color: #334752;
+		font-family: "Work Sans";
+		font-size: 15px;
+		font-weight: 400;
+		text-align: left;
+		font-style: normal;
+		letter-spacing: -0.75px;
+		}
+
+		&__social-list {
+		display: flex;
+		justify-content: space-between;
+		list-style:none;
+		width: 130px;
+		margin-top: 5px;
+		margin-left: 10px;
+		@media screen and (max-width: 768px) {
+			margin: 0 auto;
+			margin-top: 50px;
+		}
+		}
+
+		&__social-google {
+		width: 22px;
+		height: 21px;
+		}
+
+		&__social-dribble {
+		width: 22px;
+		height: 19px;
+		}
+
+		&__social-twitter {
+		width: 22px;
+		height: 17px
+		}
+}
